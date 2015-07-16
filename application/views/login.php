@@ -1,4 +1,15 @@
 
+
+<title><?php echo $titulo; ?></title>
+<?php
+   
+
+echo "<link rel='stylesheet' href='".base_url('assets/bootstrap/css/bootstrap.min.css')."'>";
+echo "<script type=text/javascript src='".base_url('assets/bootstrap/js/bootstrap.min.js')."'></script>";
+
+
+?>
+
 <!--Pulling Awesome Font -->
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
