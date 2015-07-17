@@ -3,29 +3,30 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Usuario extends CI_Controller {
 
-	/*function __construct()
+	public function __construct()
 	{
+		parent::__construct();
+		$this->data['titulo']="Login !";
 
-
-
-
-	}*/
+	}
 
 	public function index()
 	{
 		$this->data['titulo'] = "Login de acesso ao sistema";
-		$this->data['mensagem'] = "Login de acesso ao sistema";
-		$this->load->view('login', $this->data);
+		
+		if(isset($_POST)){
+			$erro = $this->verifica_login($_POST);
+		}
+			$this->load->view('login', $this->data);
 
-	}
-	public function home()
+		}
+	
+	public function verifica_login($data)
 	{
-		$this->load->view('login');
-	}
+		echo '<pre>';
+		var_dump($data);
+		$this->load->view('usuario', $this->data);
 
-	public function verifica_login()
-	{
-		$this->load->view('login');
 	}
 }
 
