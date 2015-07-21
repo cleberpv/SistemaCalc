@@ -1,9 +1,8 @@
 <title><?php echo $titulo; ?></title>
 <?php
    
-
 echo "<link rel='stylesheet' href='".base_url('assets/bootstrap/css/bootstrap.min.css')."'>";
-echo "<script type=text/javascript src='".base_url('assets/bootstrap/js/bootstrap.min.js')."'></script>";
+//echo "<script type=text/javascript src='".base_url('assets/bootstrap/js/bootstrap.min.js')."'></script>";
 
 ?>
 
@@ -17,7 +16,7 @@ echo "<script type=text/javascript src='".base_url('assets/bootstrap/js/bootstra
 
             <form id="loginform" class="form-horizontal" role="form" method="POST" action="">
 
-                    <h4>Welcome back.</h4>
+                    <h4>Sistema Calc</h4>
                      <input type="text" id="userName" name="userName" class="form-control input-sm chat-input" placeholder="username" />
                      </br>
                      <input type="text" id="userPassword" name="userPassword" class="form-control input-sm chat-input" placeholder="password" />
